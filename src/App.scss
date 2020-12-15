@@ -1,0 +1,22 @@
+$white: #faf7f0;
+
+$theme-colors: (
+  "primary": #52584D,
+  "secondary": #D9C1BB,
+  "dark": #090A0E,
+  "green": #9AB19A,
+  "light": #faf7f0,
+  "white": $white
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $white;
+}
