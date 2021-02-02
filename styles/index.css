@@ -1,0 +1,43 @@
+@import "./font.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.navbar {
+  height: 100%;
+  width: 70vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 0.5s;
+}
+
+.navbar--show {
+  transform: translateX(0);
+}
+
+.navbar__header {
+  margin-top: 0;
+  align-self: center;
+}
+
+.navbar__link {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1rem;
+  color: inherit;
+}
