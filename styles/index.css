@@ -55,6 +55,13 @@ html {
   height: 70vh;
   opacity: 0.55;
   background-position-x: 40%;
+  background-position-y: 70%;
+}
+
+@media only screen and (max-height: 400px) {
+  .hero__image {
+    height: 85vh;
+  }
 }
 
 .hero__text-container {
