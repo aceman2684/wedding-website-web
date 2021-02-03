@@ -41,3 +41,37 @@ html {
   padding-top: 1rem;
   color: inherit;
 }
+
+.hero {
+  background: rgb(0, 0, 0);
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero__image {
+  background-image: url("../images/hero_image.jpg");
+  background-size: cover;
+  height: 70vh;
+  opacity: 0.55;
+  background-position-x: 40%;
+}
+
+.hero__text-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+}
+
+.hero__text {
+  margin-bottom: 0;
+}
+
+.hero__subtext {
+  margin-top: 0.5em;
+}
