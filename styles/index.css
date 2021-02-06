@@ -53,7 +53,7 @@ html {
   background-image: url("../images/hero-image.jpg");
   background-size: cover;
   height: 70vh;
-  opacity: 0.5;
+  opacity: 0.55;
   background-position: 45%;
   transform: scale(1.2);
 }
