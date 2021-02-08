@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400|Fira+Sans:400");
 
 html {
-  font-size: 12px;
+  font-size: 17px;
 }
 
 body {
@@ -65,34 +65,8 @@ small,
   font-size: 0.833rem;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 350px) {
   html {
-    font-size: 14px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 20px;
-  }
-}
-
-/* Extra Extra large devices (Large monitors and screens, 1200px and up) */
-@media only screen and (min-width: 1400px) {
-  html {
-    font-size: 24px;
+    font-size: 15px;
   }
 }
