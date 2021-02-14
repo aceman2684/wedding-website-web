@@ -53,11 +53,15 @@ html {
   position: relative;
   text-align: center;
   overflow: hidden;
+  width: 100%;
 }
 
 .hero__image {
-  background-image: url("../images/hero-image.jpg");
   background-size: cover;
+}
+
+.hero__image--top {
+  background-image: url("../images/hero-image-top.jpg");
   height: 70vh;
   opacity: 0.55;
   background-position: 45%;
@@ -113,20 +117,65 @@ html {
   text-align: center;
 }
 
+.hero__image--bottom {
+  background-image: url("../images/hero-image-bottom.jpg");
+  height: 75vh;
+  background-position: 40% center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.footer__wedding-names {
+  margin: 0;
+}
+
+.footer__wedding-date {
+  margin: 1em 0 0 0;
+}
+
+.footer__ashley-rose {
+  margin: 0 0 0.5em 0;
+}
+
+.footer__ashley-rose__icons {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
+}
+
+.footer__ashley-rose__icons li {
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+.footer__ashley-rose__icons li a {
+  color: rgba(5, 5, 5, 0.85);
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 320px) {
-  .hero__image {
+  .hero__image--top,
+  .hero__image--bottom {
     min-height: 80vh;
   }
 }
+
 @media only screen and (max-height: 400px) {
-  .hero__image {
+  .hero__image--top {
     min-height: 95vh;
     background-position: center;
   }
 }
 
 @media only screen and (min-height: 800px) and (max-width: 400px) {
-  .hero__image {
+  .hero__image--top {
     height: 65vh;
   }
 }
