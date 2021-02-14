@@ -105,7 +105,7 @@ html::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 .footer__wedding-names {
@@ -159,13 +159,22 @@ html::-webkit-scrollbar {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .container,
+  .footer {
     padding: 0 3em;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 4em;
+  .container,
+  .footer {
+    padding: 0 5em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container,
+  .footer {
+    padding: 0 10em;
   }
 }
