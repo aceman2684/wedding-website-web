@@ -10,7 +10,6 @@ body {
   line-height: 1.75;
   margin: 0;
   font-size: 100%;
-  background-color: var(--white);
   color: var(--black);
 }
 

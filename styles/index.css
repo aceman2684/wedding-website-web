@@ -8,44 +8,22 @@
 
 html {
   box-sizing: border-box;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-.navbar {
-  height: 100%;
-  width: 70vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  background-color: pink;
-  transform: translateX(-100%);
-  will-change: transform;
-  transition: transform 0.5s;
-}
-
-.navbar--show {
-  transform: translateX(0);
-}
-
-.navbar__header {
-  margin-top: 0;
-  align-self: center;
-}
-
-.navbar__link {
-  text-decoration: none;
-  text-align: center;
-  padding-top: 1rem;
-  color: inherit;
 }
 
 .hero {
@@ -89,7 +67,7 @@ html {
 }
 
 .container {
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 .section {
@@ -120,7 +98,7 @@ html {
 .hero__image--bottom {
   background-image: url("../images/hero-image-bottom.jpg");
   height: 75vh;
-  background-position: 40% center;
+  background-position: 40% 70%;
 }
 
 .footer {
@@ -177,5 +155,17 @@ html {
 @media only screen and (min-height: 800px) and (max-width: 400px) {
   .hero__image--top {
     height: 65vh;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 4em;
   }
 }
