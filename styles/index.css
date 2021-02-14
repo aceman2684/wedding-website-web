@@ -8,8 +8,7 @@
 
 html {
   box-sizing: border-box;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow: auto;
 }
 
 body {
@@ -136,6 +135,10 @@ html::-webkit-scrollbar {
 .footer__ashley-rose__icons li a {
   color: rgba(5, 5, 5, 0.85);
   text-decoration: none;
+}
+
+.footer__ashley-rose__icons li a:hover {
+  color: rgba(5, 5, 5, 0.75);
 }
 
 @media only screen and (max-width: 320px) {
