@@ -13,6 +13,7 @@ html {
 
 body {
   background-color: var(--cream);
+  padding-bottom: 1em;
 }
 
 html::-webkit-scrollbar {
@@ -66,7 +67,7 @@ html::-webkit-scrollbar {
 }
 
 .container {
-  padding: 0 2em;
+  padding: 0 1em;
 }
 
 .section {
@@ -79,6 +80,16 @@ html::-webkit-scrollbar {
 
 .section__title {
   text-align: center;
+}
+
+.wedding-logo {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.wedding-logo__image {
+  width: 75%;
+  height: auto;
 }
 
 .countdown {
@@ -104,15 +115,7 @@ html::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 2em;
-}
-
-.footer__wedding-names {
-  margin: 0;
-}
-
-.footer__wedding-date {
-  margin: 1em 0 0 0;
+  padding: 0 1em;
 }
 
 .footer__ashley-rose {
@@ -179,5 +182,19 @@ html::-webkit-scrollbar {
   .container,
   .footer {
     padding: 0 10em;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .footer__ashley-rose {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wedding-logo__image {
+    width: 40%;
+    height: auto;
   }
 }
