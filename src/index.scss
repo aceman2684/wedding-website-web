@@ -1,0 +1,14 @@
+@import "./bootstrap.scss";
+
+body {
+  background-color: $white;
+}
+
+
+.container-fluid+.container {
+  margin-top: 1em;
+}
+
+.row+.row {
+  margin-top: 1em;
+}
