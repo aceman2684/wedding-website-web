@@ -3,7 +3,7 @@ import './Footer.scss';
 
 export default function Footer() {
   return (
-    <footer className="bg-light mt-5 p-4 pb-0 text-center text-sm-end">
+    <footer className="bg-light mt-5 p-3 p-md-4 text-center text-sm-end">
       <div className="container">
         <p className="mb-3">Photos courtesy of Ashley Rose Photography</p>
         <div className="p-0 mb-3">
