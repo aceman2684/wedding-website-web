@@ -1,15 +1,41 @@
 import React from 'react';
 import './Footer.scss';
 
+const footerIcons = [
+  {
+    label: 'Website',
+    icon: 'bi bi-globe',
+    link: 'http://www.ashleyrosephotographs.com',
+  },
+  {
+    label: 'Facebook',
+    icon: 'bi bi-facebook',
+    link: 'http://www.facebook.com/Ashleyrosephotographs/',
+  },
+  {
+    label: 'Instagram',
+    icon: 'bi bi-instagram',
+    link: 'http://www.instagram.com/ashleyrosephotographs/',
+  },
+];
+
 export default function Footer() {
   return (
-    <footer className="bg-light mt-5 p-3 p-md-4 text-center text-sm-end">
+    <footer className="bg-light p-3 p-md-4 text-center text-sm-end">
       <div className="container">
-        <p className="mb-3">Photos courtesy of Ashley Rose Photography</p>
-        <div className="p-0 mb-3">
-          <a href="http://www.ashleyrosephotographs.com" target="_blank" rel="noopener noreferrer" aria-label="Website"><i className="bi bi-globe text-body" /></a>
-          <a href="http://www.facebook.com/Ashleyrosephotographs/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="ms-3"><i className="bi bi-facebook text-body" /></a>
-          <a href="http://www.instagram.com/ashleyrosephotographs/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="ms-3"><i className="bi bi-instagram text-body" /></a>
+        <div className="row">
+          <div className="col-xl-10 mx-auto">
+            <p className="mb-3">Photos courtesy of Ashley Rose Photography</p>
+            <div className="p-0 mb-3">
+              {
+            footerIcons.map((footerIcon) => (
+              <a href={footerIcon.link} target="_blank" rel="noopener noreferrer" aria-label={footerIcon.label}>
+                <i className={`${footerIcon.icon} text-body`} />
+              </a>
+            ))
+          }
+            </div>
+          </div>
         </div>
       </div>
     </footer>
