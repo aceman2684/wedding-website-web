@@ -11,10 +11,10 @@ export default function HeroText(props) {
       <h1 className="display-4 d-none d-md-block d-lg-none">
         {text}
       </h1>
-      <h1 className="display-3 d-none d-lg-block d-xl-none">
+      <h1 className="display-3 d-none d-lg-block d-xxl-none">
         {text}
       </h1>
-      <h1 className="display-2 d-none d-xl-block">
+      <h1 className="display-2 d-none d-xxl-block">
         {text}
       </h1>
     </>
