@@ -13,7 +13,7 @@ export default function Section(props) {
 }
 
 Section.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]).isRequired,
   className: PropTypes.string,
 };
 

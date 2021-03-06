@@ -16,5 +16,5 @@ export default function TextSection(props) {
 
 TextSection.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.string, PropTypes.object])).isRequired,
 };

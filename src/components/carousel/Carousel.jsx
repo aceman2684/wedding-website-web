@@ -4,7 +4,7 @@ import 'bootstrap/js/dist/carousel';
 
 function createCarouselItem(active, image) {
   return (
-    <div className={`carousel-item ${active === true ? 'active' : ''}`}>
+    <div className={`carousel-item ${active === true ? 'active' : ''}`} key={image}>
       <img src={image} alt="Carousel Item" className="d-block w-100" />
     </div>
   );
