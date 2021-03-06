@@ -5,10 +5,7 @@ function HeroSubtext(props) {
   const { subtext } = props;
   return (
     <>
-      <h1 className="display-6 d-block d-sm-none">
-        <small>{ subtext }</small>
-      </h1>
-      <h1 className="display-6 d-none d-sm-block d-md-none">
+      <h1 className="display-6 d-block d-md-none">
         <small>{ subtext }</small>
       </h1>
       <h1 className="display-5 d-none d-md-block d-lg-none">
