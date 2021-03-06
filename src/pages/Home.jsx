@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       </div>
       <div className="container mb-4">
-        <Section>
+        <Section className="mt-md-4">
           <Countdown />
         </Section>
         <Divider />

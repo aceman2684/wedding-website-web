@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="p-0 mb-3">
               {
             footerIcons.map((footerIcon) => (
-              <a href={footerIcon.link} target="_blank" rel="noopener noreferrer" aria-label={footerIcon.label}>
+              <a href={footerIcon.link} target="_blank" rel="noopener noreferrer" aria-label={footerIcon.label} key={footerIcon.label}>
                 <i className={`${footerIcon.icon} text-body`} />
               </a>
             ))
