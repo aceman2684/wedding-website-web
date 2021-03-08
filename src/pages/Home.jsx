@@ -1,4 +1,5 @@
 import React from 'react';
+import PageLayout from '../layouts/PageLayout';
 import Hero from '../components/hero';
 import heroImageTop from '../assets/images/hero-image-top.jpg';
 import Countdown from '../components/countdown';
@@ -22,7 +23,7 @@ export default function Home() {
   ];
 
   return (
-    <>
+    <PageLayout>
       <div className="container-fluid">
         <div className="row">
           <div className="col px-0">
@@ -92,6 +93,6 @@ export default function Home() {
           <Carousel images={images} />
         </Section>
       </div>
-    </>
+    </PageLayout>
   );
 }

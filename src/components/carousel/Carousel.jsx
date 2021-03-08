@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import 'bootstrap/js/dist/carousel';
 
 function createCarouselItem(active, image) {
   return (
