@@ -10,7 +10,6 @@ import amberAndConorStairsImage from '../assets/images/amber_and_conor_stairs.jp
 import amberAndConorMooseHandsImage from '../assets/images/amber_conor_moose_hands.jpg';
 import amberAndConorPiggyBackImage from '../assets/images/amber_conor_piggyback.jpg';
 import amberAndConorStarryNightImage from '../assets/images/amber_conor_starry_night.jpg';
-import Divider from '../components/divider';
 import TextSection from '../components/text-section';
 import Section from '../components/section';
 
@@ -28,17 +27,29 @@ export default function Home() {
         <div className="row">
           <div className="col px-0">
             <Hero image={heroImageTop}>
-              <HeroText text="Amber & Conor Edwards" />
-              <HeroSubtext subtext="September 24, 2022" />
+              <HeroSubtext subtext="The wedding celebration of" className="font-cursive__compliment" />
+              <HeroText text="Amber & Conor Edwards" className="font-cursive" />
             </Hero>
           </div>
         </div>
       </div>
       <div className="container mb-4">
-        <Section className="mt-md-4">
+        <Section className="mb-5">
+          <div className="row my-3 text-center">
+            <h1 className="display-4">September 24th, 2022</h1>
+          </div>
+          <div className="mb-3 mb-md-4 row text-center">
+            <p>
+              <a href="https://g.page/DeerRidgeEstate?share" target="_blank" rel="noopener noreferrer" className="text-body">
+                Deer Ridge Estate
+                <br />
+                21107 Donahoo Rd, Tonganoxie, KS
+              </a>
+            </p>
+            <p />
+          </div>
           <Countdown />
         </Section>
-        <Divider />
         <TextSection title="It&apos;s Finally Happening!">
           We are tying the knot and we cannot wait to celebrate our very special
           day with each and every one of you! We have created this website as a
@@ -59,7 +70,6 @@ export default function Home() {
           forward to making memories and dancing the night away with our
           favorite people!
         </TextSection>
-        <Divider />
         <TextSection title="Our Story">
           Our love story began back in high school when we were brought together
           by our mutual friend, Taylor Hart (Matron of Honor). The three of us
@@ -89,7 +99,7 @@ export default function Home() {
           the side of his bed, Conor asked Amber to marry him. This time she
           knew her answer instantly, it was a definite yes!
         </TextSection>
-        <Section className="my-3 my-md-4">
+        <Section className="my-3 my-md-4 px-0">
           <Carousel images={images} />
         </Section>
       </div>

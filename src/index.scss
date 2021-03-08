@@ -1,10 +1,19 @@
 @import "./bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display&display=swap');
 
 body {
   background-color: $white;
 }
 
-
 .container-fluid+.container {
   margin-top: 1em;
+}
+
+.font-cursive {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-cursive__compliment {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
 }
