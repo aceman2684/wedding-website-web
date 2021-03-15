@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CountdownBox from './countdown-box/CountdownBox';
+import CountdownBox from './countdown-box';
 
 export default class Countdown extends Component {
   constructor() {
