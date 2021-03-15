@@ -12,7 +12,7 @@ function CountdownBox(props) {
 }
 
 CountdownBox.propTypes = {
-  time: PropTypes.string.isRequired,
+  time: PropTypes.number.isRequired,
   label: PropTypes.string.isRequired,
 };
 
