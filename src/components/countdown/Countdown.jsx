@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CountdownBox from './countdown-box';
 
 export default class Countdown extends Component {
   constructor() {
@@ -41,23 +42,14 @@ export default class Countdown extends Component {
     } = this.state;
 
     return (
-      <div className="d-flex justify-content-around text-center">
-        <div>
-          <h1>{days}</h1>
-          days
-        </div>
-        <div>
-          <h1>{hours}</h1>
-          hours
-        </div>
-        <div>
-          <h1>{minutes}</h1>
-          minutes
-        </div>
-        <div>
-          <h1>{seconds}</h1>
-          seconds
-        </div>
+      <div className="row d-flex flex-column align-items-center flex-sm-row justify-content-sm-evenly">
+        <CountdownBox time={days} label="Days" />
+        <div className="w-100 d-sm-none" />
+        <CountdownBox time={hours} label="Hours" />
+        <div className="w-100 d-sm-none" />
+        <CountdownBox time={minutes} label="Minutes" />
+        <div className="w-100 d-sm-none" />
+        <CountdownBox time={seconds} label="Seconds" />
       </div>
     );
   }
